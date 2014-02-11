@@ -93,7 +93,7 @@ body {
   text-decoration:none;
 }
 html>body .nav-item a {  /* for IE7 */
-  height: auto; 
+  *height: auto; 
 } 
 .nav-item > a:hover {
   background:#eee;
@@ -204,6 +204,7 @@ html>body .nav-item a {  /* for IE7 */
 -------------------------------------------------- */
 #header {
   padding-top: 34.18%;  
+  *height:auto;
   background-image: url(./images/cover.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -437,6 +438,7 @@ footer ul li {
   display: block;
   margin-top: 20px;
 }
+
 /* name link
 -------------------------------------------------- */
 .name { 

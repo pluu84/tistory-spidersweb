@@ -19,7 +19,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/apple-touch-icon-144x144-precomposed.png">
-
 	<link href="./images/bootstrap.css" rel="stylesheet">
 	<link href="./images/theme.css" rel="stylesheet">
 	<link rel="stylesheet" media="screen" type="text/css" href="./style.css">
@@ -157,10 +156,10 @@
 </s_sidebar_element>
 </div><!-- /.col mid-search -->
 </div><!-- /.row -->
-</section>
+</section><!-- /#middle -->
 </div><!-- /.container skeleton-mid-banner -->
 
-<div class="container skeleton"><!-- site layout : container --> 
+<div class="container skeleton"><!-- site layout : container skeleton --> 
 <main role="main" id="content" class="main">
 <div class="row"><!-- site layout : row -->
 <div class="col-sm-9 skeleton-content"><!-- site layout : skeleton-content column -->
@@ -364,7 +363,6 @@
 </div>
 </div>
 </header>
-
 	<div class="entry-content">
 	<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
 	<p><label for="[##_article_password_##]">비밀번호 ::</label>
@@ -558,9 +556,8 @@
 	</ul>
 </section>
 </s_paging>
-</section>
 
-	</div><!-- /.font utility javascript -->
+</div><!-- /.font utility javascript -->
 </article>
 </div><!-- site layout : /.col-9 skeleton-content -->
 
@@ -734,9 +731,6 @@
 <!-- JavaScript -->
 <script src="./images/modernizr-2.6.2.min.js"></script>
 <script src="./images/bootstrap.min.js"></script>
-<script src="./images/rss.js"></script>
-<script src="./images/fontsize.js"></script>
-<script src="./images/flaunt.min.js"></script>
 <script src="./images/script.js"></script>
 <script>
 //<![CDATA[
@@ -749,7 +743,7 @@
         })
       })
 
-function changeFontFamily(fontFam){document.getElementById("changeFontFamily").style.fontFamily=fontFam;}function btnPrint(){window.print();}$(document).ready(function(){var newURL = window.location.host + window.location.pathname;var pathArray = newURL.split( '/' );if(pathArray[1] == ""){$(".skeleton-header").addClass("header-init");}});
+function changeFontFamily(fontFam){document.getElementById("changeFontFamily").style.fontFamily=fontFam;}function btnPrint(){window.print();}$(document).ready(function(){var newURL = window.location.host + window.location.pathname;var pathArray = newURL.split( '/' );if(pathArray[1] == ""){$(".skeleton-header").addClass("header-init");}});$(function(){var zIndexNumber=1000;$('div').each(function(){$(this).css('zIndex',zIndexNumber);zIndexNumber-=10})});
 
 if (!Modernizr.svg) {
   $(".plus").css("background-image", "url(./images/plus-icon.png)");
